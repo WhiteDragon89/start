@@ -3,56 +3,72 @@
     list-style: none;
     text-decoration: none;
     border-collapse: collapse;
-    margin:0px;
-    padding:0px;
-    color:#000;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #263343;
+}
+.navbar__logo {
+    font-size: 24px;
+}
+.navbar__menu {
+    display: flex;
 }
 
-.intro_bg{
-    background-image:url("../image/intro.png");
-    width:100%;
-    height:718px;
+.navbar__menu li {
+    padding: 8px 12px;
 }
-
-.header{
-    display:flex;
-    width:1280px;
-    margin:auto;
-    height:86px;
+.navbar__menu li:hover {
+    background: #d49466;
+    border-radius: 4px;
 }
-
-.searchArea{
-    width:300px;
-    height:40px;
-    background:rgba(0,0,0,0.5);
-    border-radius:5px;
-    margin-top:24px;
+.navbar__icons {
+    list-style: none;
+    color: white;
+    display: flex;
+    padding-left: 0px;
 }
-
-.searchArea > form > input{
-    border:none;
-    width:250px;
-    height:40px;
-    background:rgba(0,0,0,0.0);
-    color:#fff;
-    padding-left:10px;
+.navbar__icons li {
+    padding: 8px 12px;
 }
-.searchArea > form > span {
-    width:50px;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
+.navbar__toogleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
 }
-.nav{
-    display:flex;
-    justify-content: flex-end;
-    line-height:86px;
-    width:calc(1280px - 300px);
-    color: #fff;
-}
-.nav > li{
-    margin-left: 84px;
-}
-.nav > li > a{
-    color:#fff;
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+    .navbar__menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar__menu li {
+            text-align: center;
+            width: 100%;
+    }
+    .navbar__icons {
+    display: none;
+    justify-content: center;
+    width: 100%
+    }
+    .navbar__toogleBtn {
+        display: block;
+    }
+    .navbar__menu.active,
+    .navbar__icons.active {
+        display: flex;
+    }
 }
