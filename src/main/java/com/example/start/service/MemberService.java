@@ -2,8 +2,6 @@ package com.example.start.service;
 
 import com.example.start.domain.Member;
 import com.example.start.repository.MemberRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;

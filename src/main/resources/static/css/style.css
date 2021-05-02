@@ -6,7 +6,9 @@
     margin: 0px;
     padding: 0px;
     color: white;
-
+}
+.container * {
+    color: black;
 }
 .navbar {
     display: flex;
@@ -14,16 +16,21 @@
     align-items: center;
     background-color: #263343;
     padding: 8px 24px;
+
 }
 .navbar__logo {
     font-size: 24px;
+    color: white;
 }
 .navbar__menu {
     display: flex;
+
+
 }
 
 .navbar__menu li {
     padding: 8px 12px;
+
 }
 .navbar__menu li:hover {
     background: #d49466;

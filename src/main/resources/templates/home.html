@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <HTML xmlns:th="http://www.thymeleaf.org">
+<header th:fragment="nav">
 <HEAD>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -7,7 +8,6 @@
     <script src="../js/main.js" defer></script>
 </HEAD>
 <BODY>
-
     <nav class="navbar">
         <div class="navbar__logo">
             <i class="fas fa-dragon"></i>
@@ -16,6 +16,7 @@
         <ul class="navbar__menu">
             <li><A href="/">HOME</A></li>
             <li><A href="/board/list">게시판</A></li>
+            <li><A href="/board/new">게시판 등록</A></li>
             <li><A href="#">SERVICE</A></li>
             <li><A href="#">CONTACT</A></li>
         </ul>
@@ -32,4 +33,5 @@
 
 
 </BODY>
+</header>
 </HTML>
