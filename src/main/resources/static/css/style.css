@@ -5,10 +5,9 @@
     border-collapse: collapse;
     margin: 0px;
     padding: 0px;
-    color: white;
 }
-.container * {
-    color: black;
+.navbar * {
+    color: white;
 }
 .navbar {
     display: flex;
@@ -24,8 +23,6 @@
 }
 .navbar__menu {
     display: flex;
-
-
 }
 
 .navbar__menu li {
@@ -79,4 +76,19 @@
     .navbar__icons.active {
         display: flex;
     }
+}
+
+.board__top {
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.board__mid {
+    display: flex;
+    justify-content: center;
+}
+.board__head tr th {
+    padding: 8px 12px;
+    background: #263343;
+    color: white;
 }

@@ -3,24 +3,32 @@
 <th:block th:replace="home :: nav"></th:block>
 
 <body>
-
 <div class="container">
-    <div>
-        <table class="board" >
-            <thead>
-            <tr color : red>
-                <th>#</th>
-                <th>이름</th>
+    <div class="board__top">
+        <li>게시판</li>
+        <li>SEARCH</li>
+    </div>
+    <div class="board__mid">
+    <table border="1" class="board">
+        <thead class="board__head">
+            <tr>
+                <th>번호</th>
+                <th width="280px">제목</th>
+                <th width="50px">작성일</th>
+                <th>조회</th>
             </tr>
-            </thead>
-            <tbody>
+        </thead>
+        <tbody class="board__body">
             <tr th:each="board : ${board}">
-                <td th:text="${board.id}"></td>
+                <td align="center" th:text="${board.id}"></td>
                 <td th:text="${board.name}"></td>
+                <td align="center">1</td>
+                <td align="center">1</td>
             </tr>
-            </tbody>
-        </table>
+        </tbody>
+    </table>
     </div>
 </div> <!-- /container -->
 </body>
 </html>
+
